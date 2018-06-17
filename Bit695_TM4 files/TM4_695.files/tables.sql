@@ -22,11 +22,10 @@ CREATE TABLE players
 	CREATE TABLE available_games
 	
 	(
-	MemberID int(30) NOT NULL,
+	    MemberID int(30) NOT NULL,
 		FirstName varchar(25) NOT NULL,
 		Boardgame varchar(60) NOT NULL,
-		Available varchar(20) NOT NULL,
-		Notes text,
+		Available varchar(20) NOT NULL,		
 		Date date NOT NULL,
 		);
 		
@@ -35,7 +34,7 @@ CREATE TABLE players
 	(
 	    MemberID int(30) NOT NULL,
 		FirstName varchar(25) NOT NULL,
-		day varchar(30)	NOT NULL,	
+		Day varchar(30)	NOT NULL,	
 		Boardgame varchar(60) NOT NULL,
 		Assigned varchar(20) NOT NULL,
 		Date date NOT NULL,
@@ -44,11 +43,11 @@ CREATE TABLE players
 		CREATE TABLE schedule
 	
 	(
+	    MemberID int(30) NOT NULL,
 	    Game int(30) NOT NULL,		
 		Boardgame varchar(60) NOT NULL,
-		Venue varchar(50) NOT NULL,
-		Notes text,
+		Venue varchar(50) NOT NULL,Position
 		Date date NOT NULL,
-        PRIMARY KEY ('Game'),		
+        PRIMARY KEY ('MemberID'),		
 		);
 		
