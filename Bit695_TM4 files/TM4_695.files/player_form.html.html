@@ -1,0 +1,78 @@
+ <!DOCTYPE html>
+  <html lang="en">
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>TM2</title>
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <link href="styles.css" rel="stylesheet" type="text/css" />
+  
+ </head>
+ <body>
+ 
+ <form action="create_player.php"
+  method="POST" name="create_players.php">
+                
+                
+				               
+                   <h1>Partial Players</h1>
+				   <table>
+                    
+                    <tr><td>					
+                            MemberID:
+                            <input name= "MemberID" type="text" id="memberID" tabindex="1" title="Join a game" required pattern="[a-z A-Z 0-9]+" placeholder="Please enter memberID">
+                        </td><td>
+						</td></tr>
+                        <tr><td>
+                            Firstname:
+                            <input name="Firstname" type="text" id="firstname" tabindex="2" title="First and middle name" required pattern="[a-z A-Z]+" placeholder="Please enter first name">
+                        </td><td>
+						</td></tr>
+                        <tr><td>
+                            Surname:
+                            <input name="Surname" type="text" id="surname" tabindex="3" title="Last name" required pattern="[a-z A-Z]+" placeholder="Please enter last name">
+                        </td><td>
+						</td></tr>
+                        <tr><td>
+                            EmailAddress:
+                            <input name=" EmailAddress " type="text" id="sender" tabindex="4" title="email@example.com" required pattern="^[a-z 0-9]+@[a-z 0-9]+\.[a-z]{2,4}" placeholder="example@example.com">
+                       </td><td>
+					   </td></tr>
+                        <tr><td>
+                           PhoneNumber:
+                            <input name="PhoneNumber " type="tel" id="phone" tabindex="5" title="Contact number" required pattern="[0-9 -()]+" placeholder="(64) 123456789">
+                       </td><td>
+					   </td></tr>
+					   <tr><td>
+					    Password:
+                            <input name="Password" type="text" id="password" tabindex="6" title="password" required pattern="[a-z A-Z]+" placeholder="Please enter password">
+                        </td><td>
+						</td></tr>
+                        <tr><td>
+                         </table>                                         
+                    <input type="submit" value="Submit">
+                
+            </form>
+ <script type="text/javascript"> 
+ /* <![CDATA[ */
+ 
+function isNotEmptyValue(value, name) 
+
+{ 
+
+if (value == null || value == "") 
+
+{ 
+
+alert("Error " + name + " must be given a value"); 
+
+return false; 
+
+} 
+
+else return true; 
+
+} 
+ </script>
+ </body> 
+ </html>

@@ -1,0 +1,78 @@
+ <!DOCTYPE html>
+  <html lang="en">
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>TM2</title>
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <link href="styles.css" rel="stylesheet" type="text/css" />
+  
+ </head>
+ <body>
+ 
+ <form action="create_game.php"
+  method="POST" name="create_game.php">
+                
+                
+				               
+                   <h1>Board Games</h1>
+				   <table>
+                    
+                    <tr><td>					
+                            MemberID:
+                            <input name= "MemberID" type="text" id="memberID" tabindex="1" title="Join a game" required pattern="[a-z A-Z 0-9]+" placeholder="Please enter memberID">
+                        </td><td>
+						</td></tr>
+                        <tr><td>
+                            BoardGame:
+                            <input name="Boardgame" type="text" id="boardgame" tabindex="2" title="boardgame type" required pattern="[a-z A-Z]+" placeholder="please enter boardgame selection">
+                        </td><td>
+						</td></tr>
+                        <tr><td>
+                            Position:
+                            <input name="Position" type="text" id="position" tabindex="3" title="Position of" required pattern="[a-z A-Z]+" placeholder="Current Position">
+                        </td><td>
+						</td></tr>
+                        <tr><td>  
+                            Notes:
+                            <input name="Notes" type="text" id="notes" tabindex="3" title="Notes" required pattern="[a-z A-Z]+" placeholder="Notes">
+                        </td><td>
+						</td></tr>
+                        <tr><td>      						
+                           Date:
+                            <input name="Date" type="tel" id="date" tabindex="5" title="the date" required pattern="^[a-z 0-9]+" placeholder="the date">
+                       </td><td>
+					   </td></tr>
+					   <tr><td>		
+                            Event:
+                            <input name="Event" type="text" id="event" tabindex="3" title="Event" required pattern="[a-z A-Z]+" placeholder="Event Type">
+                        </td><td>
+						</td></tr>
+                        <tr><td>  					   
+                         </table>                                         
+                    <input type="submit" value="Submit">
+                
+            </form>
+ <script type="text/javascript"> 
+ /* <![CDATA[ */
+ 
+function isNotEmptyValue(value, name) 
+
+{ 
+
+if (value == null || value == "") 
+
+{ 
+
+alert("Error " + name + " must be given a value"); 
+
+return false; 
+
+} 
+
+else return true; 
+
+} 
+ </script>
+ </body> 
+ </html>
